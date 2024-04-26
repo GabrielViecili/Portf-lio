@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="portfolio">
@@ -18,9 +19,18 @@
           <img class="img-2" src="img/portfolio.png" />
           <img class="img-3" src="img/portfolio-1.png" />
           <img class="header" src="img/header.png" />
-          <div class="text-wrapper">Inicio</div>
-          <div class="text-wrapper-2">Sobre mim</div>
-          <div class="text-wrapper-3">Contato</div>
+          <style>
+            .text-wrapper {
+                cursor: pointer;
+            }
+          </style>
+          <div class="text-wrapper" onclick="mostrarPopup()">Inicio</div>
+          <div class="text-wrapper-2">
+            <a href="#SobreMy">Sobre mim</a>
+          </div>
+          <div class="text-wrapper-3">
+            <a href="#Contatcme">Contato</a>
+          </div>
           <p class="p">Sou estudante de ciência da computação.|</p>
           <p class="facinante-atr-ves-da">
             <span class="span">Facinante atráves da </span>
@@ -38,7 +48,7 @@
           </p>
           <img class="arrow" src="img/arrow.png" />
           <div class="text-wrapper-10">Contato</div>
-          <div class="gabriel-viecili">Gabriel Viecili <br />Email: gabriel.viecili@gmail.com</div>
+          <div class="gabriel-viecili" id="Contatcme">Gabriel Viecili <br /> <a href="mailto:gabriel.viecili@gmail.com">Email: gabriel.viecili@gmail.com</a></div>
           <div class="designation"><p class="text-wrapper-11">Atualmente sou estagiário de analitycs na Stara</p></div>
           <div class="experience">
             <div class="overlap-group">
@@ -46,10 +56,14 @@
               <img class="mask-group" src="img/mask-group.png" />
               <p class="text-wrapper-12">Acadêmico de Ciência da Computação</p>
               <p class="take-your-client">
-                Take your client onboard seamlessly by our amazing<br />tool of digital onboard process.
+                Na Atitus Educação.
               </p>
               <div class="learn-more">
-                <div class="div-wrapper"><div class="text-wrapper-13">LEARN MORE</div></div>
+                <div class="div-wrapper">
+                  <div class="text-wrapper-13">
+                    <a href="https://atitus.edu.br/" target="_blank">LEARN MORE</a>
+                  </div>
+                </div>
               </div>
               <img class="group" src="img/group-2.svg" />
             </div>
@@ -62,10 +76,14 @@
               <div class="rectangle-3"></div>
               <div class="text-wrapper-14">Certificação AWS Cloud</div>
               <p class="take-your-client-2">
-                Take your client onboard seamlessly by our amazing<br />tool of digital onboard process.
+                AWS Academy Introduction to Cloud Semester 1.<br />
               </p>
               <div class="overlap-group-wrapper">
-                <div class="overlap-group-2"><div class="text-wrapper-13">LEARN MORE</div></div>
+                <div class="overlap-group-2">
+                  <div class="text-wrapper-13">
+                    <a href="https://www.credly.com/badges/76d33fd6-efd8-421a-81c5-4d7bec4f5fe7" target="_blank">LEARN MORE</a>
+                  </div>
+                </div>
               </div>
               <img class="group-2" src="img/group-1938.svg" />
             </div>
@@ -75,12 +93,16 @@
               <img class="mask-group" src="img/mask-group-3.png" />
               <div class="rectangle-2"></div>
               <div class="rectangle-3"></div>
-              <p class="text-wrapper-15">Acadêmico de Ciência da Computação</p>
+              <p class="text-wrapper-15">Investigador do TPS-2023</p>
               <p class="take-your-client-3">
-                Take your client onboard seamlessly by our amazing<br />tool of digital onboard process.
+                Em Novembro de 2023, fui um dos escolhido pela Atitus para participar do Teste de Segurança Pública (TPS)<br />
               </p>
               <div class="learn-more-2">
-                <div class="div-wrapper"><div class="text-wrapper-13">LEARN MORE</div></div>
+                <div class="div-wrapper">
+                  <div class="text-wrapper-13">
+                    <a href="https://blog.atitus.edu.br/atitus-se-destaca-na-7a-edicao-do-teste-publico-de-seguranca-da-urna-tps/" target="_blank">LEARN MORE</a>
+                  </div>
+                </div>
               </div>
               <img class="icons" src="img/icons.svg" />
             </div>
@@ -93,8 +115,8 @@
               programação e a Tecnologia da Informação.
             </p>
             <div class="text-wrapper-16">Gabriel Viecili</div>
-            <div class="text-wrapper-17">Sobre Mim</div>
-            <img class="icon-park-solid" src="img/icon-park-solid-click.svg" />
+            <div class="text-wrapper-17" id="SobreMy">Sobre Mim</div>
+            <a href="https://www.linkedin.com/in/gabriel-viecili/" target="_blank"><img class="icon-park-solid" src="img/icon-park-solid-click.svg" /></a>
           </div>
           <div class="portfolio-text-2">
             <div class="desde-que-inicie-no-wrapper">
@@ -109,7 +131,7 @@
               <div class="text-wrapper-19">Experiências e Certificações</div>
             </div>
             <div class="icon-park-solid-wrapper">
-              <img class="icon-park-solid-2" src="img/icon-park-solid-click-2.svg" />
+              <a href="img/curriculoGabrielViecili.pdf" download><img class="icon-park-solid-2" src="img/icon-park-solid-click-2.svg" /></a>
             </div>
           </div>
           <img class="skills" src="img/skills.png" />
@@ -117,12 +139,16 @@
             <div class="overlap-group">
               <div class="rectangle"></div>
               <img class="mask-group" src="img/mask-group-4.png" />
-              <p class="text-wrapper-20">Estagiário na Aréa de Analitycs</p>
+              <p class="text-wrapper-20">Estagiário na Aréa de <br> Analitycs</p>
               <p class="take-your-client-4">
-                Take your client onboard seamlessly by our amazing<br />tool of digital onboard process.
+                Atualmente faço parte da equipe de estágiario de TI da Stara, atuo na Stara Labs na Área de Analitycs.<br />
               </p>
               <div class="learn-more-3">
-                <div class="div-wrapper"><div class="text-wrapper-13">LEARN MORE</div></div>
+                <div class="div-wrapper">
+                  <div class="text-wrapper-13">
+                    <a href="https://www.stara.com.br/" target="_blank">LEARN MORE</a>
+                  </div>
+                </div>
               </div>
               <img class="group-3" src="img/group-1935.svg" />
             </div>
@@ -137,10 +163,15 @@
           <img class="vector-4" src="img/vector-3.svg" />
           <img class="vector-5" src="img/vector-4.svg" />
           <img class="web-analytics" src="img/web-analytics.png" />
-          <img class="linked-in" src="img/linkedin.png" />
+          <a href="https://www.linkedin.com/in/gabriel-viecili/" target="_blank"><img class="linked-in" src="img/linkedin.png" /></a>
           <img class="workstation" src="img/workstation.png" />
-          <img class="gmail" src="img/gmail.png" />
-          <img class="git-hub" src="img/github.png" />
+          <style>
+            .gmail {
+                cursor: pointer;
+            }
+          </style>        
+          <button onclick="confirmarEmail()"><img class="gmail" src="img/gmail.png" /></button>
+          <a href="https://github.com/GabrielViecili" target="_blank"><img class="git-hub" src="img/github.png" /></a>
         </div>
         <p class="text-wrapper-21">Developed web.hr landing page which is utilized in 25,000+ companies.</p>
         <div class="i-m-a-software">I&#39;m a Software Engineer.</div>
